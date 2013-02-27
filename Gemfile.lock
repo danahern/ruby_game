@@ -1,0 +1,10 @@
+GEM
+  remote: http://bundler-api.herokuapp.com/
+  specs:
+    gosu (0.7.45)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gosu
