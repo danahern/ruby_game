@@ -1,4 +1,6 @@
 class Player
+  attr_accessor :x, :y, :angle
+
   def initialize(window)
     @image = Gosu::Image.new(window, "media/starship.png", false)
     @x = @y = @vel_x = @vel_y = @angle = 0.0
@@ -37,7 +39,7 @@ class Player
   end
 
   def collect_stars(stars)
-    if stars.reject! {|star| Gosu::distance(@x, @y, star.x, star.y) < 50 } then
+    if stars.reject! {|star| Gosu::distance(@x, @y, star.x, star.y) < 25 } then
       @score += 1
     end
   end
