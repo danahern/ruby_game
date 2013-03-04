@@ -19,7 +19,7 @@ class First < Gosu::Window
     # @star_anim = Gosu::Image::load_tiles(self, "media/rockets.png", 15, 15, false)
     @stars = Array.new
 
-    @rocket_anim = Gosu::Image::load_tiles(self, "media/rockets.png", 15, 15, false)
+    @rocket_anim = Gosu::Image::load_tiles(self, "media/rockets.png", 25, 25, false)
 
     @font = Gosu::Font.new(self, Gosu::default_font_name, 20)
   end
